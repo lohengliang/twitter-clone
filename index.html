@@ -2,17 +2,46 @@
     <head>
         <title>Twitter (@Twitter) | Twitter</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
-        <div class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href='#' class="right">Have an account? Log in</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <form class="form-inline mr-auto my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search Twitter" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Have an account? Log in
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+        </nav>
+        <div class="main-container">
+        <div class="row profile-background">
+            <div class="container">
+                <div class="avatar-container">
+                    <div class="avatar">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="banner">
-            <img class="bannerimg" src="img/1500x500.jpg">
-        </div>
-        
+
         <div class="profile-navbar">
             <a href="#">Tweets<br>12.7K</a>
             <a href="#">Following<br>1</a>
@@ -23,21 +52,35 @@
         </div>
         <div class="row">
             <div class="leftside">
+                <div class="profile-header">
                 <ul>
-                    <li>Twitter</li>
-                    <li>@Twitter</li>
+                    <h3 class="profile-name">Twitter</h3>
+                    <h2 class="profile-tweetname">@Twitter</h2>
                     <li>What's happening?!</li>
-                    <li>Everywhere</li>
-                    <li>about.twitter.com</li>
-                    <li>View broadcasts</li>
-                    <li>Joined February 2007</li>
-                    <li>Born March 21</li>
-                    <li>1,978 Photos and videos</li>              
+                    <h2 class="profile-tweetname">Everywhere</h2>
+                    <a class="profile-tweetname">about.twitter.com</a>
+                    <a class="profile-tweetname">View broadcasts</a>
+                    <h2 class="profile-tweetname">Joined February 2007</h2>
+                    <h2 class="profile-tweetname">Born March 21</h2>
+                    <h2 class="profile-tweetname">1,978 Photos and videos</h2>
+                    <div class="pic-grid">
+                        <div class="row">
+                            <div class="col pic-col"><img src="../img/project1.jpg" height="73px"></div>
+                            <div class="col pic-col"><img src="../img/project2.jpg" height="73px"></div>
+                            <div class="col pic-col"><img src="../img/project3.jpg" height="73px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col pic-col"><img src="../img/project1.jpg" height="73px"></div>
+                            <div class="col pic-col"><img src="../img/project2.jpg" height="73px"></div>
+                            <div class="col pic-col"><img src="../img/project3.jpg" height="73px"></div>
+                        </div>
+                    </div>              
                 </ul>
+                </div>
             </div>
             <div class="main">
                 <article class="tweet">
-                    <div class="avatar" style="background-image: url(img/400x400.png);"></div>
+                    <div class="avatar2" style="background-image: url(img/400x400.png);"></div>
                     <div>
                         <header class="tweetheader">
                             <span class="tweetusername">User1</span>
@@ -54,7 +97,7 @@
                     </div>
                 </article>
                 <article class="tweet">
-                    <div class="avatar" style="background-image: url(img/400x400.png);"></div>
+                    <div class="avatar2" style="background-image: url(img/400x400.png);"></div>
                     <div>
                         <header class="tweetheader">
                             <span class="tweetusername">User2</span>
@@ -73,30 +116,34 @@
             </div>
             <div class="rightside">
                 <article class="twitterfeatures">
-                    <h2>Want to take advantage of all the new Twitter features?</h2>
-                    <p>It's simple-just log in.</p>
-                    <p>Log in</p>
-                    <p>Sign up</p>
+                    <h3 style="font-size: 18px; line-height: 24px; margin-bottom: 4px;">Want to take advantage of all the new Twitter features?</h3>
+                    <div>It's simple-just log in.</div>
+                    <div><button type="button" class="btn btn-primary">Log in</button></div>
+                    <div><button type="button" class="btn btn-link">Sign up</button></div>
                 </article>
                 <article>
                     <h2>You may also like</h2>
-                    <p>YouTube</p>
-                    <p>@YouTube</p>
-                    <p>Google</p>
-                    <p>@Google</p>
-                    <p>Twitter Support</p>
-                    <p>@TwitterSupport</p>
+                    <h3 class="other-profile-name">YouTube</h3>
+                    <h2 class="profile-tweetname">@YouTube</h2>
+                    <h3 class="other-profile-name">Google</h3>
+                    <h2 class="profile-tweetname">@Google</h2>
+                    <h3 class="other-profile-name">Twitter Support</h3>
+                    <h2 class="profile-tweetname">@TwitterSupport</h2>
                 </article>
                 <article>
                     <h2>Worldwide trends</h2>
-                    <p>Hobi</p>
-                    <p>89.3K Tweets</p>
-                    <p>#coronavirus</p>
-                    <p>38.7K Tweets</p>
-                    <p>Singapore</p>
-                    <p>25.8K Tweets</p>
+                    <span style="color: #1B95E0; font-size: 14px; font-weight: bold;">Hobi</span>
+                    <div style="color: #657786; font-size: 12px; line-height: 16px; margin-bottom: 10px;">89.3K Tweets</div>
+                    <span style="color: #1B95E0; font-size: 14px; font-weight: bold;">#coronavirus</span>
+                    <div style="color: #657786; font-size: 12px; line-height: 16px; margin-bottom: 10px;">38.7K Tweets</div>
+                    <span style="color: #1B95E0; font-size: 14px; font-weight: bold;">Singapore</span>
+                    <div style="color: #657786; font-size: 12px; line-height: 16px; margin-bottom: 10px;">25.8K Tweets</div>
                 </article>
             </div>
         </div>
+        </div>
     </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>
