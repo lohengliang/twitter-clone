@@ -1,74 +1,39 @@
 body {
+    background-color: #e6ecf0;
+}
+
+@media (min-width: 1200px) {
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1340px;
+    }
+}
+
+.topsearchbar {
+    margin-right: 25px;
+}
+
+.profile-stats-row {
+    background-color: #fff;
+    width: 100%;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-.navbar {
-    overflow: hidden;
-}
-
-.navbar a {
-    float: left;
-    text-decoration: none;
-    padding: 4px 10px;
-}
-
-.navbar a.right {
-    float: right;
-    text-decoration: none;
-}
-
-.banner {
-    height: 360px;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 60px;
-}
-
-.banner .bannerimg {
-    width: 100%;
-}
-
-.profile-navbar {
-    margin: auto;
-    width: 35%;
-    display: flex;
-    text-align: center;
-}
-
-.profile-navbar a {
-    text-decoration: none;
-    padding: 4px 10px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.leftside {
-    flex: 30%;
-    background-color: #e6ecf0;
-}
-
-.leftside ul li {
+.profile-stats ul {
     list-style: none;
 }
 
-.main {
-    flex: 45%;
+.profile-stats li {
+    display: inline-block;
+    padding: 10px 16px;
 }
 
-.rightside {
-    flex: 25%;
-}
-
-.tweet {
+.tweetcard {
+    background-color: #fff;
     max-width: 400px;
     margin: 1em auto;
     display: flex;
     padding: 1em;
-    margin-bottom: 1em;
 }
 
 .tweetheader {
@@ -83,6 +48,7 @@ body {
     margin-right: 0.5em;
     border-radius: 50%;
     overflow: hidden;
+    background-image: url(../img/400x400.png);
 }
 
 .tweetfooter {
@@ -98,21 +64,29 @@ body {
 }
 
 .twitterfeatures {
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
+    background-color: #fff;
+}
+
+.twitterfeaturesimg {
+    width: 200px;
 }
 
 .profile-background {
     height: 320px;
     background-image: url('../img/1500x500.jpg');
-  }
+    background-size: cover;
+}
 
 .avatar-container {
-    bottom: 147px;
+    bottom: -197px;
     left: 10px;
-    position: absolute;
+    position: relative;
     transition: bottom .3s;
     z-index: 3;
-  }
+}
   
 .avatar {
     background: #fff;
@@ -122,12 +96,11 @@ body {
     height: 200px;
     position: relative;
     width: 200px;
+    background-size: cover;
 }
 
 .profile-header {
-    margin-top: 35px;
-    padding-right: 15px;
-    padding-left: 15px;
+    margin-top: 15px;
 }
 
 .profile-tweetname {
@@ -144,4 +117,40 @@ body {
 
 .other-profile-name {
     font-size: 14px;
+}
+
+.pic-col {
+    margin: 2px;
+    padding: 2px;
+}
+
+.twitterfeatures h3 {
+    font-size: 18px; 
+    line-height: 24px; 
+    margin-bottom: 4px;
+}
+
+.justlogin {
+    margin-bottom: 16px;
+}
+
+.worldwidetrend {
+    background-color: #fff;
+}
+
+.worldwidetrendid {
+    color: #1B95E0; 
+    font-size: 14px; 
+    font-weight: bold;
+}
+
+.worldwidetrendnooftweets {
+    color: #657786; 
+    font-size: 12px; 
+    line-height: 16px; 
+    margin-bottom: 10px;
+}
+
+.recommendations {
+    background-color: #fff;
 }
