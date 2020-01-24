@@ -3,8 +3,8 @@ body {
 }
 
 @media (min-width: 1200px) {
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1340px;
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1340px;
     }
 }
 
@@ -17,6 +17,7 @@ body {
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 .profile-stats ul {
@@ -26,14 +27,22 @@ body {
 .profile-stats li {
     display: inline-block;
     padding: 10px 16px;
+    text-align: center;
 }
 
 .tweetcard {
     background-color: #fff;
-    max-width: 400px;
-    margin: 1em auto;
+    margin: 2px 20px 0px 20px;
     display: flex;
     padding: 1em;
+}
+
+.tweetmainheader {
+    background-color: #fff;
+    margin: 20px 20px 0px 20px;
+    padding: 1em;
+    max-height: 40px;
+    padding-top: 8px;
 }
 
 .tweetheader {
@@ -77,11 +86,11 @@ body {
 .profile-background {
     height: 320px;
     background-image: url('../img/1500x500.jpg');
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .avatar-container {
-    bottom: -197px;
+    bottom: -217px;
     left: 10px;
     position: relative;
     transition: bottom .3s;
@@ -136,6 +145,8 @@ body {
 
 .worldwidetrend {
     background-color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .worldwidetrendid {
@@ -153,4 +164,59 @@ body {
 
 .recommendations {
     background-color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
+
+.recommendations h2, h3 {
+    padding: 0px 10px;
+}
+
+.recommendations h2{
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.worldwidetrend h2, span, div {
+    padding: 0px 10px;
+}
+
+.worldwidetrend h2{
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.youmayalsoliketitle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.worldwidetrendstitle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.profile-whatishappening {
+    font-size: 14;
+    padding-left: 0px;
+}
+
+.profile-name {
+    padding-left: 0px;
+}
+
+.tweetmainheaderlist {
+    list-style: none;
+    padding: 0px;
+}
+
+.tweetmainheaderlistitem {
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    padding: 0px 15px 0px 0px;
+    color: #1B95E0;
+    font-weight: bold;
+    line-height: 1;
+}
+

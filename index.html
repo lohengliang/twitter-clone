@@ -56,7 +56,7 @@
         </div>
         <div class="container">
             <div class="row profile-stats-row">
-                <div class="col">
+                <div class="col-3">
                 </div>
                 <div class="col-8 profile-stats">
                     <ul>
@@ -79,7 +79,7 @@
                         <ul>
                             <h3 class="profile-name">Twitter</h3>
                             <h2 class="profile-tweetname">@Twitter</h2>
-                            <span style="font-size:14;">What's happening?!</span>
+                            <span class="profile-whatishappening">What's happening?!</span>
                             <h2 class="profile-tweetname">Everywhere</h2>
                             <a class="profile-tweetname">about.twitter.com</a>
                             <a class="profile-tweetname">View broadcasts</a>
@@ -88,20 +88,27 @@
                             <h2 class="profile-tweetname">1,978 Photos and videos</h2>
                             <div class="pic-grid">
                                 <div class="row">
-                                    <div class="col pic-col"><img src="../img/project1.jpg" height="73px"></div>
-                                    <div class="col pic-col"><img src="../img/project2.jpg" height="73px"></div>
-                                    <div class="col pic-col"><img src="../img/project3.jpg" height="73px"></div>
+                                    <div class="col pic-col"><img src="img/project1.jpg" height="73px"></div>
+                                    <div class="col pic-col"><img src="img/project2.jpg" height="73px"></div>
+                                    <div class="col pic-col"><img src="img/project3.jpg" height="73px"></div>
                                 </div>
                                 <div class="row">
-                                    <div class="col pic-col"><img src="../img/project1.jpg" height="73px"></div>
-                                    <div class="col pic-col"><img src="../img/project2.jpg" height="73px"></div>
-                                    <div class="col pic-col"><img src="../img/project3.jpg" height="73px"></div>
+                                    <div class="col pic-col"><img src="img/project1.jpg" height="73px"></div>
+                                    <div class="col pic-col"><img src="img/project2.jpg" height="73px"></div>
+                                    <div class="col pic-col"><img src="img/project3.jpg" height="73px"></div>
                                 </div>
                             </div>
                         </ul>
                     </div>
                 </div>
                 <div class="col-6">
+                    <div class="tweetmainheader">
+                        <ul class="tweetmainheaderlist">
+                            <li class="tweetmainheaderlistitem">Tweets</li>
+                            <li class="tweetmainheaderlistitem">Tweets & replies</li>
+                            <li class="tweetmainheaderlistitem">Media</li>
+                        </ul>
+                    </div>
                     <article class="tweetcard">
                         <div class="avatar2"></div>
                         <div>
@@ -138,37 +145,58 @@
                     </article>
                 </div>
                 <div class="col">
-                    <article class="twitterfeatures">
+                    <div class="twitterfeatures">
                         <img class="twitterfeaturesimg" src="img/delight_prompt_3.png"></img>
                         <h3>Want to take advantage of all the new Twitter features?</h3>
                         <div class="justlogin">It's simple-just log in.</div>
                         <div><button type="button" class="btn btn-primary">Log in</button></div>
                         <div><button type="button" class="btn btn-link">Sign up</button></div>
-                    </article>
-                    <article class="recommendations">
-                        <h3>You may also like</h3>
-                        <h3 class="other-profile-name">YouTube</h3>
-                        <h2 class="profile-tweetname">@YouTube</h2>
-                        <h3 class="other-profile-name">Google</h3>
-                        <h2 class="profile-tweetname">@Google</h2>
-                        <h3 class="other-profile-name">Twitter Support</h3>
-                        <h2 class="profile-tweetname">@TwitterSupport</h2>
-                    </article>
-                    <article class="worldwidetrend">
-                        <h3>Worldwide trends</h3>
-                        <span class= "worldwidetrendid">Hobi</span>
-                        <div class= "worldwidetrendnooftweets">89.3K
+                    </div>
+                    <div class="recommendations">
+                        <h3 class="youmayalsoliketitle">You may also like</h3>
+                        <div class="row" style="margin-bottom: 15px;">
+                            <div class="col-3">
+                                <img src="img/youtube_icon.jpg" style="max-width: 60px;">
+                            </div>
+                            <div class="col">
+                                <h3 class="other-profile-name" style="padding-top: 5px;">YouTube</h3>
+                                <h2 class="profile-tweetname">@YouTube</h2>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 15px;">
+                            <div class="col-3">
+                                <img src="img/google_icon.jpg" style="max-width: 60px;">
+                            </div>
+                            <div class="col">
+                                <h3 class="other-profile-name" style="padding-top: 5px;">Google</h3>
+                                <h2 class="profile-tweetname">@Google</h2>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 15px;">
+                            <div class="col-3">
+                                <img src="img/twitter_icon.jpg" style="max-width: 60px;">
+                            </div>
+                            <div class="col">
+                                <h3 class="other-profile-name" style="padding-top: 5px;">Twitter Support</h3>
+                                <h2 class="profile-tweetname">@TwitterSupport</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="worldwidetrend">
+                        <h3 class="worldwidetrendstitle">Worldwide trends</h3>
+                        <span class="worldwidetrendid">Hobi</span>
+                        <div class="worldwidetrendnooftweets">89.3K
                             Tweets
                         </div>
-                        <span class= "worldwidetrendid">#coronavirus</span>
-                        <div class= "worldwidetrendnooftweets">38.7K
+                        <span class="worldwidetrendid">#coronavirus</span>
+                        <div class="worldwidetrendnooftweets">38.7K
                             Tweets
                         </div>
-                        <span class= "worldwidetrendid">Singapore</span>
-                        <div class= "worldwidetrendnooftweets">25.8K
+                        <span class="worldwidetrendid">Singapore</span>
+                        <div class="worldwidetrendnooftweets">25.8K
                             Tweets
                         </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </div>
