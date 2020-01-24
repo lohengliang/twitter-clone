@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Navigation bar at the top of the page -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +28,8 @@
             <form class="navbar-form topsearchbar" role="search">
                 <div class="input-group">
                     <input class="form-control" type="search" placeholder="Search Twitter" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-success" type="submit"><span class="iconify"
+                            data-icon="simple-line-icons:magnifier" data-inline="false"></span></button>
                 </div>
             </form>
             <ul class="navbar-nav">
@@ -47,32 +49,35 @@
         </div>
     </nav>
     <div class="main-container">
-        <div class="row profile-background profile-stats-row">
-            <div class="container">
-                <div class="avatar-container">
-                    <div class="avatar">
+        <!-- Use of Bootstrap row to display banner -->
+        <div class="container">
+            <div class="row profile-background profile-stats-row">
+                <div class="container">
+                    <div class="avatar-container">
+                        <div class="avatar">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row profile-stats-row">
-                <div class="col-3">
+                <div class="col">
                 </div>
-                <div class="col-8 profile-stats">
+                <div class="col-6 profile-stats">
                     <ul>
-                        <li><span style="font-weight: bold;
-                        font-size: 12px;
-                        letter-spacing: .02em;
-                        transition: color .15s ease-in-out;">Tweets</span><br><span style="font-size: 18px;
-    font-weight: bold;
-    padding-top: 3px;
-    transition: color .15s ease-in-out;">12.7K</span></li>
-                        <li>Following<br>1</li>
-                        <li>Followers<br>57.1M</li>
-                        <li>Likes<br>6,388</li>
-                        <li>Lists<br>11</li>
-                        <li>Moments<br>127</li>
+                        <li><span class="profile-stats-header">Tweets</span><br>
+                            <span class="profile-stats-text">12.7K</span></li>
+                        <li><span class="profile-stats-header">Following</span><br>
+                            <span class="profile-stats-text">1</span></li>
+                        <li><span class="profile-stats-header">Followers</span><br>
+                            <span class="profile-stats-text">57.1M</span></li>
+                        <li><span class="profile-stats-header">Likes</span><br>
+                            <span class="profile-stats-text">6,388</span></li>
+                        <li><span class="profile-stats-header">Lists</span><br>
+                            <span class="profile-stats-text">11</span></li>
+                        <li><span class="profile-stats-header">Moments</span><br>
+                            <span class="profile-stats-text">127</span></li>
                     </ul>
                 </div>
                 <div class="col">
@@ -84,33 +89,35 @@
                 <div class="col">
                     <div class="profile-header">
                         <ul>
-                            <h3 class="profile-name">Twitter</h3>
-                            <h2 class="profile-tweetname">@Twitter</h2>
+                            <h3 class="profile-name">TwitterClone</h3>
+                            <h2 class="profile-tweetname">@TwitterClone</h2>
                             <div class="profile-whatishappening">What's happening?!</div>
-                            <div style="padding-left: 0px; padding-top: 10px;">
-                            <span class="iconify" data-icon="octicon:location" data-inline="false"></span>
-                            <h2 class="profile-tweetname" style="display: inline;">Everywhere</h2>
+                            <div class="leftbardesc">
+                                <span class="iconify" data-icon="octicon:location" data-inline="false"></span>
+                                <h2 class="leftbardescwords">Everywhere</h2>
                             </div>
-                            <div style="padding-left: 0px;">
-                            <span class="iconify" data-icon="octicon:link" data-inline="false"></span>
-                            <a class="profile-tweetname" style="display: inline;">about.twitter.com</a>
+                            <div class="leftbardesc">
+                                <span class="iconify" data-icon="octicon:link" data-inline="false"></span>
+                                <a class="leftbardescwords">about.twitter.com</a>
                             </div>
-                            <div style="padding-left: 0px;">
-                            <span class="iconify" data-icon="bx:bx-broadcast" data-inline="false"></span>   
-                            <a class="profile-tweetname" style="display: inline;">View broadcasts</a>
+                            <div class="leftbardesc">
+                                <span class="iconify" data-icon="bx:bx-broadcast" data-inline="false"></span>
+                                <a class="leftbardescwords">View broadcasts</a>
                             </div>
-                            <div style="padding-left: 0px;">
-                            <span class="iconify" data-icon="bx:bx-calendar" data-inline="false"></span>
-                            <h2 class="profile-tweetname" style="display: inline;">Joined February 2007</h2>
+                            <div class="leftbardesc">
+                                <span class="iconify" data-icon="bx:bx-calendar" data-inline="false"></span>
+                                <h2 class="leftbardescwords">Joined February 2007</h2>
                             </div>
-                            <div style="padding-left: 0px;">
-                            <span class="iconify" data-icon="octicon:globe" data-inline="false"></span> 
-                            <h2 class="profile-tweetname" style="display: inline;">Born March 21</h2>
+                            <div class="leftbardescborn">
+                                <span class="iconify" data-icon="octicon:globe" data-inline="false"></span>
+                                <h2 class="leftbardescwords">Born March 21</h2>
                             </div>
-                            <div style="padding-left: 0px; padding-top: 10px;">
-                            <span class="iconify" data-icon="ant-design:picture-outlined" data-inline="false"></span>
-                            <h2 class="profile-tweetname" style="display: inline;">1,978 Photos and videos</h2>
+                            <div class="leftbardesc">
+                                <span class="iconify" data-icon="ant-design:picture-outlined"
+                                    data-inline="false"></span>
+                                <h2 class="leftbardescwords" style="display: inline;">1,978 Photos and videos</h2>
                             </div>
+                            <!-- Use of Bootstrap row and col to show image grid -->
                             <div class="pic-grid">
                                 <div class="row">
                                     <div class="col pic-col"><img src="img/project1.jpg" height="73px"></div>
@@ -138,16 +145,20 @@
                         <div class="avatar2"></div>
                         <div>
                             <header class="tweetheader">
-                                <span class="tweetusername">User1</span>
-                                <span>@User1</span>
-                                <span>&#183</span>
-                                <span>Jan 21</span>
+                                <span class="tweetusername">TwitterClone</span>
+                                <span class="tweetuserid">@TwitterClone</span>
+                                <span class="tweetdotsymbol">&#183</span>
+                                <span class="tweetdate">Jan 21</span>
                             </header>
                             <div class="tweetbody">Test Tweet 1</div>
                             <footer class="tweetfooter">
-                                <span>14K</span>
-                                <span>107K</span>
-                                <span>402K</span>
+                                <span class="iconify" data-icon="mdi-light:message-reply" data-inline="false"></span>
+                                <span class="replycount">14K</span>
+                                <span class="iconify" data-icon="ant-design:retweet-outlined"
+                                    data-inline="false"></span>
+                                <span class="retweetcount">107K</span>
+                                <span class="iconify" data-icon="ant-design:heart-outlined" data-inline="false"></span>
+                                <span class="likecount">402K</span>
                             </footer>
                         </div>
                     </article>
@@ -155,16 +166,83 @@
                         <div class="avatar2"></div>
                         <div>
                             <header class="tweetheader">
-                                <span class="tweetusername">User2</span>
-                                <span>@User2</span>
-                                <span>&#183</span>
-                                <span>Jan 21</span>
+                                <span class="tweetusername">TwitterClone</span>
+                                <span class="tweetuserid">@TwitterClone</span>
+                                <span class="tweetdotsymbol">&#183</span>
+                                <span class="tweetdate">Jan 21</span>
                             </header>
                             <div class="tweetbody">Test Tweet 2</div>
                             <footer class="tweetfooter">
-                                <span>2.9K</span>
-                                <span>1.0K</span>
-                                <span>9.4K</span>
+                                <span class="iconify" data-icon="mdi-light:message-reply" data-inline="false"></span>
+                                <span class="replycount">14K</span>
+                                <span class="iconify" data-icon="ant-design:retweet-outlined"
+                                    data-inline="false"></span>
+                                <span class="retweetcount">107K</span>
+                                <span class="iconify" data-icon="ant-design:heart-outlined" data-inline="false"></span>
+                                <span class="likecount">402K</span>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="tweetcard">
+                        <div class="avatar2"></div>
+                        <div>
+                            <header class="tweetheader">
+                                <span class="tweetusername">TwitterClone</span>
+                                <span class="tweetuserid">@TwitterClone</span>
+                                <span class="tweetdotsymbol">&#183</span>
+                                <span class="tweetdate">Jan 21</span>
+                            </header>
+                            <div class="tweetbody">Test Tweet 3</div>
+                            <footer class="tweetfooter">
+                                <span class="iconify" data-icon="mdi-light:message-reply" data-inline="false"></span>
+                                <span class="replycount">14K</span>
+                                <span class="iconify" data-icon="ant-design:retweet-outlined"
+                                    data-inline="false"></span>
+                                <span class="retweetcount">107K</span>
+                                <span class="iconify" data-icon="ant-design:heart-outlined" data-inline="false"></span>
+                                <span class="likecount">402K</span>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="tweetcard">
+                        <div class="avatar2"></div>
+                        <div>
+                            <header class="tweetheader">
+                                <span class="tweetusername">TwitterClone</span>
+                                <span class="tweetuserid">@TwitterClone</span>
+                                <span class="tweetdotsymbol">&#183</span>
+                                <span class="tweetdate">Jan 21</span>
+                            </header>
+                            <div class="tweetbody">Test Tweet 4</div>
+                            <footer class="tweetfooter">
+                                <span class="iconify" data-icon="mdi-light:message-reply" data-inline="false"></span>
+                                <span class="replycount">14K</span>
+                                <span class="iconify" data-icon="ant-design:retweet-outlined"
+                                    data-inline="false"></span>
+                                <span class="retweetcount">107K</span>
+                                <span class="iconify" data-icon="ant-design:heart-outlined" data-inline="false"></span>
+                                <span class="likecount">402K</span>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="tweetcard">
+                        <div class="avatar2"></div>
+                        <div>
+                            <header class="tweetheader">
+                                <span class="tweetusername">TwitterClone</span>
+                                <span class="tweetuserid">@TwitterClone</span>
+                                <span class="tweetdotsymbol">&#183</span>
+                                <span class="tweetdate">Jan 21</span>
+                            </header>
+                            <div class="tweetbody">Test Tweet 5</div>
+                            <footer class="tweetfooter">
+                                <span class="iconify" data-icon="mdi-light:message-reply" data-inline="false"></span>
+                                <span class="replycount">14K</span>
+                                <span class="iconify" data-icon="ant-design:retweet-outlined"
+                                    data-inline="false"></span>
+                                <span class="retweetcount">107K</span>
+                                <span class="iconify" data-icon="ant-design:heart-outlined" data-inline="false"></span>
+                                <span class="likecount">402K</span>
                             </footer>
                         </div>
                     </article>
@@ -179,30 +257,30 @@
                     </div>
                     <div class="recommendations">
                         <h3 class="youmayalsoliketitle">You may also like</h3>
-                        <div class="row" style="margin-bottom: 15px;">
+                        <div class="row youmayalsoliketitlerow">
                             <div class="col-3">
-                                <img src="img/youtube_icon.jpg" style="max-width: 60px;">
+                                <img src="img/youtube_icon.jpg" width="60px">
                             </div>
                             <div class="col">
-                                <h3 class="other-profile-name" style="padding-top: 5px;">YouTube</h3>
+                                <h3 class="other-profile-name">YouTube</h3>
                                 <h2 class="profile-tweetname">@YouTube</h2>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom: 15px;">
+                        <div class="row youmayalsoliketitlerow">
                             <div class="col-3">
-                                <img src="img/google_icon.jpg" style="max-width: 60px;">
+                                <img src="img/google_icon.jpg" width="60px">
                             </div>
                             <div class="col">
-                                <h3 class="other-profile-name" style="padding-top: 5px;">Google</h3>
+                                <h3 class="other-profile-name">Google</h3>
                                 <h2 class="profile-tweetname">@Google</h2>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom: 15px;">
+                        <div class="row youmayalsoliketitlerow">
                             <div class="col-3">
-                                <img src="img/twitter_icon.jpg" style="max-width: 60px;">
+                                <img src="img/twitter_icon.jpg" width="60px">
                             </div>
                             <div class="col">
-                                <h3 class="other-profile-name" style="padding-top: 5px;">Twitter Support</h3>
+                                <h3 class="other-profile-name">Twitter Support</h3>
                                 <h2 class="profile-tweetname">@TwitterSupport</h2>
                             </div>
                         </div>

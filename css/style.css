@@ -18,6 +18,7 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
+    height: 70px;
 }
 
 .profile-stats ul {
@@ -26,7 +27,7 @@ body {
 
 .profile-stats li {
     display: inline-block;
-    padding: 10px 16px;
+    padding: 10px 6px;
     text-align: center;
 }
 
@@ -66,10 +67,12 @@ body {
 
 .tweetusername {
     font-weight: bold;
+    padding-left: 0px;
 }
 
 .tweetbody {
     margin-bottom: 0.5em;
+    padding-left: 0px;
 }
 
 .twitterfeatures {
@@ -86,7 +89,6 @@ body {
 .profile-background {
     height: 320px;
     background-image: url('../img/1500x500.jpg');
-    /* background-size: cover; */
 }
 
 .avatar-container {
@@ -109,7 +111,7 @@ body {
 }
 
 .profile-header {
-    margin-top: 15px;
+    margin-top: 35px;
 }
 
 .profile-tweetname {
@@ -125,6 +127,7 @@ body {
 }
 
 .other-profile-name {
+    padding-top: 5px;
     font-size: 14px;
 }
 
@@ -199,6 +202,7 @@ body {
 .profile-whatishappening {
     font-size: 14;
     padding-left: 0px;
+    padding-bottom: 10px;
 }
 
 .profile-name {
@@ -220,3 +224,66 @@ body {
     line-height: 1;
 }
 
+.profile-stats-header {
+    color: #657786;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: .02em;
+    transition: color .15s ease-in-out;
+}
+
+.profile-stats-text {
+    color: #657786;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 3px;
+    transition: color .15s ease-in-out;
+}
+
+.leftbardesc {
+    padding-left: 0px;
+}
+
+.leftbardescborn {
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+
+.leftbardescwords {
+    color: #657786;
+    display: inline;
+    font-size: 14px;
+}
+
+.tweetuserid {
+    padding-left: 0px; 
+    padding-right: 0px;
+}
+
+.tweetdotsymbol {
+    padding-left: 1px; 
+    padding-right: 1px;
+}
+
+.tweetdate {
+    padding-left: 0px;
+}
+
+.replycount{
+    padding-left: 0px; 
+    padding-right: 20px;
+}
+
+.retweetcount {
+    padding-left: 0px; 
+    padding-right: 20px;
+}
+
+.likecount {
+    padding-left: 0px; 
+    padding-right: 20px;
+}
+
+.youmayalsoliketitlerow {
+    margin-bottom: 15px;
+}
